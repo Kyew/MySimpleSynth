@@ -28,7 +28,7 @@ MySimpleSynth::MySimpleSynth() : MySynthProcessorChain(), _lowpass(juce::dsp::II
     gain.setRampDurationSeconds(0.1f);
     
     //Setting up ADSR
-    _adsrParameters = {.attack = PARAMETERS_ATTACK_DEFAULT, .decay = PARAMETERS_DECAY_DEFAULT, .sustain = PARAMETERS_SUSTAIN_DEFAULT, .release = PARAMETERS_RELEASE_DEFAULT};
+    _adsrParameters = {PARAMETERS_ATTACK_DEFAULT, PARAMETERS_DECAY_DEFAULT, PARAMETERS_SUSTAIN_DEFAULT, PARAMETERS_RELEASE_DEFAULT};
 }
 
 MySimpleSynth::~MySimpleSynth()
